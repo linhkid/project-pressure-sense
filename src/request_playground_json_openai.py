@@ -16,7 +16,7 @@ def main():
     openai.api_key = openai_api_key
 
     # Read the JSON prompt from the file
-    json_file_path = 'prompts/pressure_sense_emotion/scenario_2_with_reasoning.json'
+    json_file_path = '../prompts/system_instruction/scenario_1/scenario_1_gpt4o.json'
 
     # Make a request to the OpenAI API
     client = OpenAI()
