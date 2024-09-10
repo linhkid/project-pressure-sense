@@ -1,5 +1,5 @@
-# project-pressure-sense
-Project Pressure-Sense: Investigating how AI systems understand and respond to pressure, both in terms of performance and ethical considerations.
+# Project Pressure-Sense
+## Project Pressure-Sense: Investigating how AI systems understand and respond to pressure, both in terms of performance and ethical considerations.
 
 This repository is part of my final project under [AI Alignment course](https://aisafetyfundamentals.com/) from AI Safety Fundamentals by Bluedot Impact. 
 
