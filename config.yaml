@@ -1,0 +1,20 @@
+# API URLs
+localai_url: "http://localhost:8080/v1/chat/completions"
+openai_api_url: "https://api.openai.com/v1/chat/completions"
+anthropic_api_url: "https://api.anthropic.com/v1/messages"
+
+# Default model
+default_model: "meta-llama-3.1-8b-instruct"
+
+# File paths
+system_instruction_dir: "prompts/system_instruction"
+scenarios_dir: "prompts"
+
+# API keys (these should be set as environment variables, not in the config file)
+# openai_api_key: ${OPENAI_API_KEY}
+# anthropic_api_key: ${ANTHROPIC_API_KEY}
+
+# Model parameters
+temperature: 0.9
+top_p: 0.95
+max_tokens: 1024
