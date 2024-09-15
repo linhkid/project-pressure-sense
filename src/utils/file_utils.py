@@ -2,6 +2,8 @@ import os
 import json
 from .config_utils import CONFIG
 
+def get_project_root():
+    return os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 def load_system_message(scenario, reasoning):
     file_name = os.path.join(CONFIG['system_instruction_dir'],
                              f"peer_support_{'no_' if not reasoning else ''}reasoning.txt")
@@ -11,7 +13,19 @@ def load_system_message(scenario, reasoning):
     except FileNotFoundError:
         print(f"Warning: System instruction file '{file_name}' not found. Using default instruction.")
         return "You are a helpful AI assistant."
-
+def load_system_judge():
+    project_root = get_project_root()
+   # prompt_path = os.path.join(project_root, CONFIG['system_prompt_file'])
+    prompt_path = os.path.join(project_root, CONFIG['system_instruction_dir'], CONFIG['system_prompt_file'])
+    try:
+        with open(prompt_path, 'r', encoding='utf-8') as file:
+            return file.read().strip()
+    except FileNotFoundError:
+        print(f"Error: System prompt file not found at {prompt_path}")
+        raise
+    except Exception as e:
+        print(f"Error reading system prompt file: {e}")
+        raise
 def save_conversation(messages, scenario, model, reasoning):
     output_dir = os.path.join(CONFIG['scenarios_dir'], scenario)
     fname = f"{scenario}_{model}{'_with_reasoning' if reasoning else ''}.json"
@@ -39,5 +53,11 @@ def save_conversation(messages, scenario, model, reasoning):
         print(f"Error saving conversation to {full_path}: {e}")
 
 def load_json(path):
-    with open(path, "r") as reader:
-        return json.load(reader)
+    project_root = get_project_root()
+    full_path = os.path.join(project_root, path)
+    try:
+        with open(full_path, "r") as reader:
+            return json.load(reader)
+    except FileNotFoundError:
+        print(f"Error: File not found at {full_path}")
+        raise

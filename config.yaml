@@ -5,14 +5,12 @@ anthropic_api_url: "https://api.anthropic.com/v1/messages"
 
 # Default model
 default_model: "meta-llama-3.1-8b-instruct"
+claude_model: "claude-3-5-sonnet-20240620"
 
 # File paths
 system_instruction_dir: "prompts/system_instruction"
 scenarios_dir: "prompts"
-
-# API keys (these should be set as environment variables, not in the config file)
-# openai_api_key: ${OPENAI_API_KEY}
-# anthropic_api_key: ${ANTHROPIC_API_KEY}
+system_prompt_file: "llm_judge_4_aspects.txt"
 
 # Model parameters
 temperature: 0.9
