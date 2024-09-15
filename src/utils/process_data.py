@@ -2,6 +2,7 @@ import yaml
 import json
 
 
+##### Obsolete - DO NOT USE
 class ChatUtils:
     def __init__(self, config_file='config.yaml'):
         self.config = self.load_config(config_file)
