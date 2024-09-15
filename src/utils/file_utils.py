@@ -6,9 +6,9 @@ def get_project_root():
     return os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 def load_system_message(scenario, reasoning):
     file_name = os.path.join(CONFIG['system_instruction_dir'],
-                             f"peer_support_{'no_' if not reasoning else ''}reasoning.txt")
+                             f"peer_support_{'no_' if not reasoning else 'with_'}reasoning.txt")
     try:
-        with open(file_name, 'r') as file:
+        with open(file_name, 'r', encoding='utf-8') as file:
             return file.read().strip()
     except FileNotFoundError:
         print(f"Warning: System instruction file '{file_name}' not found. Using default instruction.")
