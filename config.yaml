@@ -11,6 +11,7 @@ claude_model: "claude-3-5-sonnet-20240620"
 system_instruction_dir: "prompts/system_instruction"
 scenarios_dir: "prompts"
 system_prompt_file: "llm_judge_4_aspects.txt"
+data_dir: "data/result/"
 
 # Model parameters
 temperature: 0.9
