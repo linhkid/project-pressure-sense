@@ -1,17 +1,16 @@
 # Project Pressure-Sense
-## Project Pressure-Sense: Investigating how AI systems understand and respond to pressure, both in terms of performance and ethical considerations.
 
-This repository is part of my final project under [AI Alignment course](https://aisafetyfundamentals.com/) from AI Safety Fundamentals by Bluedot Impact. 
+## Investigating AI Systems' Response to Pressure: Performance and Ethical Considerations
 
-The project aims to investigate how AI systems, particularly Large Language Models (LLMs), understand and respond to different types of pressure. The project will explore both the performance and ethical implications of AI behaviours under pressure, focusing on identifying potential vulnerabilities
+This repository is part of a final project for the [AI Alignment course](https://aisafetyfundamentals.com/) from AI Safety Fundamentals by Bluedot Impact. The project aims to investigate how AI systems, particularly Large Language Models (LLMs), understand and respond to different types of pressure, exploring both performance and ethical implications.
 
-This repository includes prompts and evaluated model completions extended from the work of [technical report](https://www.apolloresearch.ai/s/deception_under_pressure.pdf) "Large Language Models can Strategically Deceive their Users when Put Under Pressure.", in which the authors deployed GPT-4 as an autonomous stock trading agent in a simulated environment. When the model obtained an insider trading tip, it acted on the tip despite knowing it was disapproved by company management. When reporting to its manager, the model hid the real reasons behind its trading decision.
+## Project Overview
 
-In the scope of this research, however, I would like to focus on a broader sense of emotional support or chit-chatting and discussing. 
+We extended the work from the [technical report](https://www.apolloresearch.ai/s/deception_under_pressure.pdf) "Large Language Models can Strategically Deceive their Users when Put Under Pressure." Our focus is on a broader sense of emotional support, casual conversation, and discussion.
 
-## Install
+## Installation
 
-If you want to upload prompts to the OpenAI Playground, you will need to install the dependencies:
+To upload prompts to the OpenAI Playground, install the dependencies:
 
 ```bash
 pip install -r requirements.txt
@@ -19,14 +18,47 @@ pip install -r requirements.txt
 
 ## Usage
 
-To upload a prompt (`prompts/scenario_*/*.json`) to the OpenAI Playground, run:
+To upload a prompt to the OpenAI Playground:
 
 ```bash
 python request_playground_json_openai.py
 ```
 
-To evaluate the conversation using LLM as a judge (in here I'm using Claude 3.5 Sonnet from Anthropic), run:
+To evaluate conversations using LLM as a judge (Claude 3.5 Sonnet from Anthropic):
 
 ```bash
 python upload_to_claude_judge.py
 ```
+
+## Summary of Findings
+
+We evaluated several models (GPT4o, GPT4-0613, Gemini 1.5 Pro, and Llama 3.1 8B) across three scenarios, with and without reasoning capabilities.
+
+### Performance Across Scenarios
+
+![Average Scores of Models Across Scenarios (With Reasoning)](https://github.com/linhkid/project-pressure-sense/raw/main/data/chart/average_scores_of_models_across_scenarios_with_reasoning.png)
+
+![Average Scores of Models Across Scenarios (Without Reasoning)](https://github.com/linhkid/project-pressure-sense/raw/main/data/chart/average_scores_of_models_across_scenarios_without_reasoning.png)
+
+- **With Reasoning**: GPT4o and Gemini 1.5 Pro performed consistently well.
+- **Without Reasoning**: Performance varied more, with Gemini 1.5 Pro showing the most consistent high scores.
+
+### Attribute Performance
+
+![Average Scores Across All Models by Scenario (With Reasoning)](https://github.com/linhkid/project-pressure-sense/raw/main/data/chart/average_scores_across_all_models_by_scenario_with_reasoning.png)
+
+![Average Scores Across All Models by Scenario (Without Reasoning)](https://github.com/linhkid/project-pressure-sense/raw/main/data/chart/average_scores_across_all_models_by_scenario_without_reasoning.png)
+
+- **Pressure Handling**: Generally good, slightly better in Scenarios 1 and 3.
+- **Alignment**: High in Scenario 1, lower in Scenarios 2 and 3, especially without reasoning.
+- **Truthfulness**: Consistently high across all scenarios.
+- **Coherence**: Generally high with some variation, particularly without reasoning.
+
+### Key Observations
+
+1. **Reasoning Importance**: Models with reasoning capabilities generally performed better.
+2. **Scenario Difficulty**: Scenario 2 (emotionally volatile client) was most challenging.
+3. **Model Differences**: GPT4o and Gemini 1.5 Pro consistently outperformed others.
+4. **Ethical Considerations**: High truthfulness maintained, but alignment scores in Scenarios 2 and 3 suggest areas for improvement.
+
+These findings highlight the need for continued research in AI systems' ability to handle pressure and maintain ethical alignment in challenging scenarios.
