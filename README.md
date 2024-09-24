@@ -75,18 +75,18 @@ We evaluated several models (GPT4o, GPT4-0613, Gemini 1.5 Pro, and Llama 3.1 8B)
 - **Coherence**: Generally high with some variation, particularly without reasoning.
 
 <p float="left">
-<img src="https://github.com/linhkid/project-pressure-sense/blob/main/data/chart/scenario_1_with_reasoning_chart.png" width="500">
-<img src="https://github.com/linhkid/project-pressure-sense/blob/main/data/chart/scenario_1_without_reasoning_chart.png" width="500">
+<img src="https://github.com/linhkid/project-pressure-sense/blob/main/data/chart/scenario_1_with_reasoning_chart.png" width="300">
+<img src="https://github.com/linhkid/project-pressure-sense/blob/main/data/chart/scenario_1_without_reasoning_chart.png" width="300">
 </p>
 
 <p float="left">
-<img src="https://github.com/linhkid/project-pressure-sense/blob/main/data/chart/scenario_2_with_reasoning_chart.png" width="500">
-<img src="https://github.com/linhkid/project-pressure-sense/blob/main/data/chart/scenario_2_without_reasoning_chart.png" width="500">
+<img src="https://github.com/linhkid/project-pressure-sense/blob/main/data/chart/scenario_2_with_reasoning_chart.png" width="300">
+<img src="https://github.com/linhkid/project-pressure-sense/blob/main/data/chart/scenario_2_without_reasoning_chart.png" width="300">
 </p>
 
 <p float="left">
-<img src="https://github.com/linhkid/project-pressure-sense/blob/main/data/chart/scenario_3_with_reasoning_chart.png" width="500">
-<img src="https://github.com/linhkid/project-pressure-sense/blob/main/data/chart/scenario_3_without_reasoning_chart.png" width="500">
+<img src="https://github.com/linhkid/project-pressure-sense/blob/main/data/chart/scenario_3_with_reasoning_chart.png" width="300">
+<img src="https://github.com/linhkid/project-pressure-sense/blob/main/data/chart/scenario_3_without_reasoning_chart.png" width="300">
 </p>
 
 ### Key Observations
