@@ -4,6 +4,10 @@
 
 This repository is part of a final project for the [AI Alignment course](https://aisafetyfundamentals.com/) from AI Safety Fundamentals by Bluedot Impact. The project aims to investigate how AI systems, particularly Large Language Models (LLMs), understand and respond to different types of pressure, exploring both performance and ethical implications.
 
+Below is one example excerpt from the conversation with one of the LLM models in the experiments
+
+<img src="https://github.com/linhkid/project-pressure-sense/blob/main/data/chat-vis-scen2-notable.png">
+
 ## Project Overview
 
 We extended the work from the [technical report](https://www.apolloresearch.ai/s/deception_under_pressure.pdf) "Large Language Models can Strategically Deceive their Users when Put Under Pressure." Our focus is on a broader sense of emotional support, casual conversation, and discussion.
