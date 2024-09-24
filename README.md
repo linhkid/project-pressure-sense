@@ -36,9 +36,9 @@ We evaluated several models (GPT4o, GPT4-0613, Gemini 1.5 Pro, and Llama 3.1 8B)
 
 ### Performance Across Scenarios
 
-![Average Scores of Models Across Scenarios (With Reasoning)](https://github.com/linhkid/project-pressure-sense/blob/main/data/chart/average_scores_with_reasoning.png)
+![Average Scores of Models Across Scenarios (With Reasoning)](https://github.com/linhkid/project-pressure-sense/blob/main/data/chart/model_comparison_with_reasoning.png)
 
-![Average Scores of Models Across Scenarios (Without Reasoning)](https://github.com/linhkid/project-pressure-sense/blob/main/data/chart/average_scores_without_reasoning.png)
+![Average Scores of Models Across Scenarios (Without Reasoning)](https://github.com/linhkid/project-pressure-sense/blob/main/data/chart/model_comparison_without_reasoning.png)
 
 - **With Reasoning**: GPT4o and Gemini 1.5 Pro performed consistently well.
 - **Without Reasoning**: Performance varied more, with Gemini 1.5 Pro showing the most consistent high scores.
