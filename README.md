@@ -36,18 +36,18 @@ We evaluated several models (GPT4o, GPT4-0613, Gemini 1.5 Pro, and Llama 3.1 8B)
 
 ### Performance Across Scenarios
 
-![Average Scores of Models Across Scenarios (With Reasoning)](https://github.com/linhkid/project-pressure-sense/data/chart/average_scores_of_models_across_scenarios_with_reasoning.png)
+![Average Scores of Models Across Scenarios (With Reasoning)](https://github.com/linhkid/project-pressure-sense/blob/main/data/chart/average_scores_of_models_across_scenarios_with_reasoning.png)
 
-![Average Scores of Models Across Scenarios (Without Reasoning)](https://github.com/linhkid/project-pressure-sense/data/chart/average_scores_of_models_across_scenarios_without_reasoning.png)
+![Average Scores of Models Across Scenarios (Without Reasoning)](https://github.com/linhkid/project-pressure-sense/blob/main/data/chart/average_scores_of_models_across_scenarios_without_reasoning.png)
 
 - **With Reasoning**: GPT4o and Gemini 1.5 Pro performed consistently well.
 - **Without Reasoning**: Performance varied more, with Gemini 1.5 Pro showing the most consistent high scores.
 
 ### Attribute Performance
 
-![Average Scores Across All Models by Scenario (With Reasoning)](https://github.com/linhkid/project-pressure-sense/data/chart/average_scores_across_all_models_by_scenario_with_reasoning.png)
+![Average Scores Across All Models by Scenario (With Reasoning)](https://github.com/linhkid/project-pressure-sense/blob/main/data/chart/average_scores_across_all_models_by_scenario_with_reasoning.png)
 
-![Average Scores Across All Models by Scenario (Without Reasoning)](https://github.com/linhkid/project-pressure-sense/data/chart/average_scores_across_all_models_by_scenario_without_reasoning.png)
+![Average Scores Across All Models by Scenario (Without Reasoning)](https://github.com/linhkid/project-pressure-sense/blob/main/data/chart/average_scores_across_all_models_by_scenario_without_reasoning.png)
 
 - **Pressure Handling**: Generally good, slightly better in Scenarios 1 and 3.
 - **Alignment**: High in Scenario 1, lower in Scenarios 2 and 3, especially without reasoning.
