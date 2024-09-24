@@ -95,7 +95,7 @@ We evaluated several models (GPT4o, GPT4-0613, Gemini 1.5 Pro, and Llama 3.1 8B)
 
 ### Key Observations
 
-1. **Reasoning Importance**: Models with reasoning capabilities generally performed better.
+1. **Reasoning Importance**: Models with reasoning capabilities and enabled in system instruction generally performed better.
 2. **Scenario Difficulty**: Scenario 2 (emotionally volatile client) was most challenging.
 3. **Model Differences**: GPT4o and Gemini 1.5 Pro consistently outperformed others.
 4. **Ethical Considerations**: High truthfulness maintained, but alignment scores in Scenarios 2 and 3 suggest areas for improvement.
