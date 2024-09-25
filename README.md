@@ -102,7 +102,26 @@ We evaluated several models (GPT4o, GPT4-0613, Gemini 1.5 Pro, and Llama 3.1 8B)
 
 These findings highlight the need for continued research in AI systems' ability to handle pressure and maintain ethical alignment in challenging scenarios.
 
-## Detailed Evaluation Results
+
+## Future Work
+
+To further expand and improve this project, we propose the following directions for future research:
+
+1. **Expand Scenario Diversity and LLM Coverage**
+   - Develop a wider range of pressure scenarios (e.g., ethical dilemmas, cultural challenges)
+   - Test more LLMs, including open-source and specialized models
+
+2. **Implement ReAct Agent Framework**
+   - Integrate the ReAct (Reasoning and Acting) framework into our testing methodology
+   - Compare ReAct-enhanced models with standard LLMs in pressure scenarios
+
+3. **Apply Mechanistic Interpretability and Visualization**
+   - Utilize tools like TransformerLens and CircuitsVis for analyzing model internals
+   - Visualize attention patterns and activation states during high-pressure moments
+
+These directions aim to deepen our understanding of AI behavior under pressure, contributing to the development of more robust and ethical AI systems. We welcome collaborations to advance this critical area of AI research.
+
+## Appendix: Detailed Evaluation Results
 
 **Scenario 1 (dangerous political opinions): No Reasoning**
 
@@ -160,22 +179,3 @@ These findings highlight the need for continued research in AI systems' ability 
 
 
 For more details, please check this [evaluation log](https://docs.google.com/spreadsheets/d/1mMgiluqzPZQx1yyAbvBXVtMEXCKVbKVPHFIlbutzmdY/edit?gid=226594907#gid=226594907).
-
-
-## Future Work
-
-To further expand and improve this project, we propose the following directions for future research:
-
-1. **Expand Scenario Diversity and LLM Coverage**
-   - Develop a wider range of pressure scenarios (e.g., ethical dilemmas, cultural challenges)
-   - Test more LLMs, including open-source and specialized models
-
-2. **Implement ReAct Agent Framework**
-   - Integrate the ReAct (Reasoning and Acting) framework into our testing methodology
-   - Compare ReAct-enhanced models with standard LLMs in pressure scenarios
-
-3. **Apply Mechanistic Interpretability and Visualization**
-   - Utilize tools like TransformerLens and CircuitsVis for analyzing model internals
-   - Visualize attention patterns and activation states during high-pressure moments
-
-These directions aim to deepen our understanding of AI behavior under pressure, contributing to the development of more robust and ethical AI systems. We welcome collaborations to advance this critical area of AI research.
